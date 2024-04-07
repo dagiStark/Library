@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="objSc.js" defer></script>
+    <link rel="stylesheet" href="objCss.css" />
+  </head>
+  <body>
+
+    <div class="head">
+      <h1>My-Library</h1>
+
+      <button class="button show-button">Add</button>
+
+    </div>
+    
+
+    <dialog class="modal" id="modal">
+      <h2>Fill the form</h2>
+      <form class="form" action="/" method="get">
+        <div>
+          <label for="title">Title: </label>
+          <input id="title" name="title type="text">
+        </div>
+        <div>
+          <label for="author">Author: </label>
+          <input id="author" name="author" type="text" />
+        </div>
+        <div>
+          <label for="pages">Pages: </label>
+          <input id="pages" name="pages" type="number" />
+        </div>
+        <div>
+          <input type="checkbox" value="Read" /> Read
+          <input type="checkbox" value="Nor Read" /> Not Read.
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+    </dialog>
+
+    <div class="book-store">
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  
+  background-color: rgb(121, 164, 171);
+}
+
+.head {
+  display:flex;
+  padding-bottom: 20px;
+  align-items:center;
+  flex-direction:column;
+}
+
+button {
+  border-radius: 10px;
+}
+
+.show-button {
+  max-width: 100px;
+}
+
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+
+  opacity: 0.75;
+}
+
+.modal {
+  max-width: 50%;
+}
+
+
+#each-book {
+  padding: 20px;
+  font-weight: bold;
+  margin: 20px;
+  border: brown solid;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.book-store {
+  /* resize: both; */
+  overflow: auto;
+  display: grid;
+  
+  gap: 4px;
+  /* background-color: skyblue; */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
